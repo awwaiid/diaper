@@ -25,11 +25,7 @@ Docker for Mac has some pretty poor disk sharing (volume) performance. At the ti
 
 ### Postgres data
 
-To keep data between development sessions, we create a volume to store data in ./db/data/postgres. You will need to create this directory first (./db/data is git-ignored).
-
-`mkdir -p db/data/postgres`
-
-Then you can set up the database with the following command.
+To keep data between development sessions, we create a volume to store data in ./db/data/postgres (which is git-ignored). You can set up the database with the following command.
 
 `docker-compose run web rails db:setup`
 
